@@ -18,4 +18,4 @@ Configurar um ambiente Docker utilizando docker-compose, que vai buildar uma ima
     docker compose up -d
     ```
 
--  link do repositório GitHub:
+-  link do repositório GitHub: https://github.com/skywalker2077/dockerfile-compose-nginx.git
