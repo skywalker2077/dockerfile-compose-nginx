@@ -11,7 +11,7 @@ Configurar um ambiente Docker utilizando docker-compose, que vai buildar uma ima
 3. Baixar o arquivo Dockerfile.
 4. Baixar o arquivo docker-compose.yml
 
-### Buildar a imagem a partir do Dockerfile criado:
+### Buildar a imagem a partir do Docker-compose criado:
 
 - Para subir o container, execute o comando:
     ```
