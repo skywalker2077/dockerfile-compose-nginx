@@ -4,35 +4,18 @@
 
 Configurar um ambiente Docker utilizando docker-compose, que vai buildar uma imagem NGINX a partir de um Dockerfile personalizado.
 
-## Passos para construir a imagem:
+## Primeiros passos:
 
 1. Criar uma pasta para o projeto exemplo "Dockercompose para Nginx".
-2. Criar o arquivo index.html com o codigo da aplicação ViaCEP encontrada em: https://viacep.com.br/exemplo/jquery/
-3. Criar o Dockerfile com o conteúdo:
-    ```
-    FROM nginx:alpine
-    COPY ./index.html /usr/share/nginx/html/index.html
-    EXPOSE 80
-    ```
+2. Baixar o arquivo index.html com o codigo da aplicação ViaCEP.
+3. Baixar o arquivo Dockerfile.
+4. Baixar o arquivo docker-compose.yml
 
 ### Buildar a imagem a partir do Dockerfile criado:
 
-1. Criar o arquivo docker-compose.yml com o conteúdo:
-    ```
-    version: '3.8'
-services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8080:80"
-    restart: unless-stopped
-    ```
-
-2. Para subir o container, execute no (Windows PowerShell/CMD:
+- Para subir o container, execute o comando:
     ```
     docker compose up -d
     ```
 
-- Link para Docker Hub: 
+-  link do repositório GitHub:
